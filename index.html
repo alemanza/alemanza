@@ -1,1 +1,72 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>RB Slider</title>
+</head>
+<body>
+    <div id="app" class="hello">
+        <header>
+          <h1>CSSlider</h1>
+        </header>
+        <section class="wrapper">
+          <div class="csslider">
+            <input v-for="(card, i) in cards.length - 2"
+              :key="i"
+              type="radio"
+              name="csslider"
+              :id="`pos${i+1}`"
+              :class="`cssl-input -step${i+1}`"
+              :checked="i === 0"
+            />
+    
+            <div class="cssl-nav">
+              <label v-for="(card, i) in cards.length - 2"
+                :key="i"
+                :for="`pos${i+1}`"
+                class="cssl-arrow"
+              />
+            </div>
+    
+            <div class="cssl-container">
+              <div class="cssl-translation">
+                
+                <div class="cssl-card" v-for="(card, i) in cards" :key="i">
+                  <figure class="cssl-figure">
+                    <!-- <img class="cssl-img" :src="require(`../assets/images/${card.imgURL}.jpg`)" alt="Big Ben"> -->
+                  </figure>
+                  <div class="cssl-content">
+                    <div class="cssl-text-content">
+                      <h3 class="cssl-title">{{card.name}}</h3>
+                      <p class="cssl-description">{{card.description}}</p>
+                    </div>
+                    <div class="cssl-subcontent">
+                      <span class="cssl-rating">{{card.rating}}</span>
+                      <span class="cssl-stars">
+                        <span v-for="(star, e) in Math.ceil(card.rating)"
+                          :key="e"
+                          :class="['cssl-icon',
+                              isMidStar(i) && e === Math.ceil(card.rating) -1 ? 'icon-mid-star' : 'icon-star'
+                            ]"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </div>      
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>        
+      <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
