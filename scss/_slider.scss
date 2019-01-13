@@ -102,7 +102,7 @@ $margins: 30px;
 
 @media screen and (max-width: 767px){
     body {
-        padding: 40px 0 0;
+        padding: 64px 0 0;
     }
     .wrapper {
         margin: 20px 0;
@@ -118,7 +118,6 @@ $margins: 30px;
     .modal-wrapper {
         background-color: #FFF;
         margin: 0;
-        padding-top: 64px;
         &:after {
             content: none;
         }
@@ -136,6 +135,19 @@ $margins: 30px;
     }
     .modal-body {
         margin: 0;
+    }
+
+    .-modal {
+        header {
+            display: none;
+        }
+        .wrapper {
+            display: none;
+        }
+        .modal-mask {
+            display: block;
+            position: relative;
+        }
     }
 }
 

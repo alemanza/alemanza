@@ -123,7 +123,7 @@ h1 {
 /* line 1, ../scss/_modal.scss */
 .modal-header-mobile {
   display: none;
-  background-color: #FFF;
+  background-color: #F5F5F5;
   padding: 15px 20px;
   position: fixed;
   top: 0;
@@ -134,8 +134,6 @@ h1 {
 
 /* line 11, ../scss/_modal.scss */
 .modal-mask {
-  overflow-scrolling: touch;
-  -webkit-overflow-scrolling: touch;
   position: fixed;
   overflow: auto;
   z-index: 2;
@@ -150,49 +148,49 @@ h1 {
   box-sizing: border-box;
 }
 
-/* line 28, ../scss/_modal.scss */
+/* line 26, ../scss/_modal.scss */
 .modal-wrapper {
   margin: 80px 0;
 }
-/* line 30, ../scss/_modal.scss */
+/* line 28, ../scss/_modal.scss */
 .modal-wrapper:after {
   content: '';
   height: 80px;
   display: block;
 }
 
-/* line 37, ../scss/_modal.scss */
+/* line 35, ../scss/_modal.scss */
 .modal-container {
   max-width: 900px;
   margin: 0px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #F5F5F5;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all .3s ease;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* line 48, ../scss/_modal.scss */
+/* line 46, ../scss/_modal.scss */
 .modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 54, ../scss/_modal.scss */
+/* line 52, ../scss/_modal.scss */
 .modal-header h3 {
   font-size: 20px;
   margin-top: 0;
   color: #444;
 }
 
-/* line 60, ../scss/_modal.scss */
+/* line 58, ../scss/_modal.scss */
 .modal-item-container {
   width: 100%;
 }
 
-/* line 65, ../scss/_modal.scss */
+/* line 63, ../scss/_modal.scss */
 .modal-close {
   width: 24px;
   height: 24px;
@@ -201,15 +199,17 @@ h1 {
   cursor: pointer;
 }
 
-/* line 73, ../scss/_modal.scss */
+/* line 71, ../scss/_modal.scss */
 .modal-body {
   margin: 20px 0;
   justify-content: center;
 }
 
-/* line 79, ../scss/_modal.scss */
+/* line 77, ../scss/_modal.scss */
 .modal-item-img {
   width: 100%;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
 
 /* line 83, ../scss/_modal.scss */
@@ -336,7 +336,7 @@ h1 {
 @media screen and (max-width: 767px) {
   /* line 104, ../scss/_slider.scss */
   body {
-    padding: 40px 0 0;
+    padding: 64px 0 0;
   }
 
   /* line 107, ../scss/_slider.scss */
@@ -355,37 +355,50 @@ h1 {
   .modal-wrapper {
     background-color: #FFF;
     margin: 0;
-    padding-top: 64px;
   }
-  /* line 122, ../scss/_slider.scss */
+  /* line 121, ../scss/_slider.scss */
   .modal-wrapper:after {
     content: none;
   }
 
-  /* line 126, ../scss/_slider.scss */
+  /* line 125, ../scss/_slider.scss */
   .modal-container {
     border-radius: 0;
     box-shadow: none;
   }
 
-  /* line 130, ../scss/_slider.scss */
+  /* line 129, ../scss/_slider.scss */
   .modal-header-mobile {
     display: flex;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  /* line 134, ../scss/_slider.scss */
+  /* line 133, ../scss/_slider.scss */
   .modal-header-desktop {
     display: none;
   }
 
-  /* line 137, ../scss/_slider.scss */
+  /* line 136, ../scss/_slider.scss */
   .modal-body {
     margin: 0;
   }
+
+  /* line 141, ../scss/_slider.scss */
+  .-modal header {
+    display: none;
+  }
+  /* line 144, ../scss/_slider.scss */
+  .-modal .wrapper {
+    display: none;
+  }
+  /* line 147, ../scss/_slider.scss */
+  .-modal .modal-mask {
+    display: block;
+    position: relative;
+  }
 }
 @media screen and (min-width: 768px) {
-  /* line 143, ../scss/_slider.scss */
+  /* line 155, ../scss/_slider.scss */
   .modal-header-mobile {
     display: none !important;
   }

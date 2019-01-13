@@ -1,6 +1,6 @@
 .modal-header-mobile {
   display: none;
-  background-color: #FFF;
+  background-color: #F5F5F5;
   padding: 15px 20px;
   position: fixed;
   top: 0;
@@ -9,8 +9,6 @@
   z-index: 3;
 }
 .modal-mask {
-  overflow-scrolling: touch;
-  -webkit-overflow-scrolling: touch;
   position: fixed;
   overflow: auto;
   z-index: 2;
@@ -38,7 +36,7 @@
   max-width: 900px;
   margin: 0px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #F5F5F5;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
@@ -78,6 +76,8 @@
 
 .modal-item-img {
   width: 100%;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
 
 .modal-enter {

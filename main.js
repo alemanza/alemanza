@@ -107,7 +107,9 @@ var app = new Vue({
     },
     methods: {
         openModal() {
-            document.body.style.overflow = 'hidden';
+            if( !window.matchMedia("(max-width: 767px)") ) {
+                document.body.style.overflow = 'hidden';
+            }
             this.showModal = true
         },
         closeModal() {
