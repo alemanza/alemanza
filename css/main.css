@@ -1,4 +1,4 @@
-/* line 5, ../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -127,11 +127,14 @@ h1 {
 
 /* line 12, ../scss/_slider.scss */
 .csslider {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-/* line 16, ../scss/_slider.scss */
+/* line 19, ../scss/_slider.scss */
 .csslider .cssl-container {
   position: relative;
   margin: auto;
@@ -139,7 +142,7 @@ h1 {
   overflow: hidden;
   padding: 10px 20px 20px;
 }
-/* line 22, ../scss/_slider.scss */
+/* line 25, ../scss/_slider.scss */
 .csslider .cssl-container:before, .csslider .cssl-container:after {
   z-index: 1;
   content: '';
@@ -148,311 +151,377 @@ h1 {
   top: 0;
   width: 20px;
 }
-/* line 30, ../scss/_slider.scss */
+/* line 33, ../scss/_slider.scss */
 .csslider .cssl-container:before {
   left: 0;
   background-image: linear-gradient(to left, transparent, #F5F5F5);
 }
-/* line 34, ../scss/_slider.scss */
+/* line 37, ../scss/_slider.scss */
 .csslider .cssl-container:after {
   right: 0;
   background-image: linear-gradient(to right, transparent, #F5F5F5);
 }
-/* line 39, ../scss/_slider.scss */
+/* line 42, ../scss/_slider.scss */
 .csslider .cssl-translation {
   display: flex;
   transition: transform 0.4s cubic-bezier(0.19, 0.63, 0.44, 1.16);
 }
-/* line 44, ../scss/_slider.scss */
-.csslider .cssl-arrow {
-  transition: color .5s;
-  top: calc(50% - 25px - 5px);
-  height: 40px;
-  width: 40px;
-  padding: 10px;
-  position: absolute;
-  display: none;
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
-  color: #888;
-  opacity: .6;
-  font-size: 40px;
-  font-family: 'cssl-icons';
-  cursor: pointer;
-}
-/* line 60, ../scss/_slider.scss */
-.csslider .cssl-arrow:before {
-  content: "\e902";
-}
-/* line 63, ../scss/_slider.scss */
-.csslider .cssl-arrow:hover {
-  transition-duration: 0s;
-  color: #444;
-}
-/* line 69, ../scss/_slider.scss */
+/* line 48, ../scss/_slider.scss */
 .csslider .cssl-card {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  width: 300px;
-  min-width: 300px;
-  height: 416px;
-  margin-left: 30px;
+  width: 280px;
+  min-width: 280px;
+  margin: 15px;
   background-color: #FFF;
 }
-/* line 78, ../scss/_slider.scss */
-.csslider .cssl-card:first-of-type {
-  margin-left: 0;
-}
-/* line 82, ../scss/_slider.scss */
+/* line 58, ../scss/_slider.scss */
 .csslider .cssl-img {
   width: 100%;
   display: block;
 }
-/* line 87, ../scss/_slider.scss */
+/* line 63, ../scss/_slider.scss */
 .csslider .cssl-content {
-  padding: 17px 20px 20px;
+  padding: 15px 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 116px;
   box-sizing: border-box;
 }
-/* line 95, ../scss/_slider.scss */
+/* line 71, ../scss/_slider.scss */
 .csslider .cssl-title {
   font-size: 24px;
   color: #444;
   letter-spacing: -.03em;
   padding-bottom: 5px;
 }
-/* line 101, ../scss/_slider.scss */
+/* line 77, ../scss/_slider.scss */
 .csslider .cssl-description {
   font-size: 13px;
   color: #888;
 }
-/* line 105, ../scss/_slider.scss */
+/* line 81, ../scss/_slider.scss */
 .csslider .cssl-subcontent {
+  margin: 15px -20px 0;
+  border-top: solid 1px #ECECEC;
+  padding: 15px 20px 5px;
   display: flex;
-  color: #FF8626;
+  color: #444;
 }
-/* line 109, ../scss/_slider.scss */
+/* line 88, ../scss/_slider.scss */
 .csslider .cssl-rating {
-  font-size: 13px;
+  font-size: 24px;
   padding-right: 5px;
-  font-weight: 700;
+  font-weight: normal;
 }
-/* line 114, ../scss/_slider.scss */
+/* line 93, ../scss/_slider.scss */
 .csslider .cssl-icon {
   font-size: 10px;
   margin-left: 3px;
 }
-/* line 118, ../scss/_slider.scss */
+/* line 97, ../scss/_slider.scss */
 .csslider .cssl-stars {
   display: flex;
   align-items: center;
 }
-/* line 122, ../scss/_slider.scss */
+/* line 101, ../scss/_slider.scss */
 .csslider .cssl-input {
   display: none;
 }
-/* line 127, ../scss/_slider.scss */
+/* line 106, ../scss/_slider.scss */
 .csslider .cssl-input.-step1:checked ~ .cssl-container {
   transform: translateX(0);
 }
-/* line 131, ../scss/_slider.scss */
+/* line 110, ../scss/_slider.scss */
 .csslider .cssl-input.-step1:checked ~ .cssl-nav .cssl-arrow:last-of-type {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 136, ../scss/_slider.scss */
+/* line 115, ../scss/_slider.scss */
 .csslider .cssl-input.-step1:checked ~ .cssl-nav .cssl-arrow:nth-child(2) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 144, ../scss/_slider.scss */
+/* line 123, ../scss/_slider.scss */
 .csslider .cssl-input.-step2:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -330px));
 }
-/* line 148, ../scss/_slider.scss */
+/* line 127, ../scss/_slider.scss */
 .csslider .cssl-input.-step2:checked ~ .cssl-nav .cssl-arrow:nth-child(1) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 153, ../scss/_slider.scss */
+/* line 132, ../scss/_slider.scss */
 .csslider .cssl-input.-step2:checked ~ .cssl-nav .cssl-arrow:nth-child(3) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 144, ../scss/_slider.scss */
+/* line 123, ../scss/_slider.scss */
 .csslider .cssl-input.-step3:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -660px));
 }
-/* line 148, ../scss/_slider.scss */
+/* line 127, ../scss/_slider.scss */
 .csslider .cssl-input.-step3:checked ~ .cssl-nav .cssl-arrow:nth-child(2) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 153, ../scss/_slider.scss */
+/* line 132, ../scss/_slider.scss */
 .csslider .cssl-input.-step3:checked ~ .cssl-nav .cssl-arrow:nth-child(4) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 144, ../scss/_slider.scss */
+/* line 123, ../scss/_slider.scss */
 .csslider .cssl-input.-step4:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -990px));
 }
-/* line 148, ../scss/_slider.scss */
+/* line 127, ../scss/_slider.scss */
 .csslider .cssl-input.-step4:checked ~ .cssl-nav .cssl-arrow:nth-child(3) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 153, ../scss/_slider.scss */
+/* line 132, ../scss/_slider.scss */
 .csslider .cssl-input.-step4:checked ~ .cssl-nav .cssl-arrow:nth-child(5) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 144, ../scss/_slider.scss */
+/* line 123, ../scss/_slider.scss */
 .csslider .cssl-input.-step5:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -1320px));
 }
-/* line 148, ../scss/_slider.scss */
+/* line 127, ../scss/_slider.scss */
 .csslider .cssl-input.-step5:checked ~ .cssl-nav .cssl-arrow:nth-child(4) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 153, ../scss/_slider.scss */
+/* line 132, ../scss/_slider.scss */
 .csslider .cssl-input.-step5:checked ~ .cssl-nav .cssl-arrow:nth-child(6) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 144, ../scss/_slider.scss */
+/* line 123, ../scss/_slider.scss */
 .csslider .cssl-input.-step6:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -1650px));
 }
-/* line 148, ../scss/_slider.scss */
+/* line 127, ../scss/_slider.scss */
 .csslider .cssl-input.-step6:checked ~ .cssl-nav .cssl-arrow:nth-child(5) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 153, ../scss/_slider.scss */
+/* line 132, ../scss/_slider.scss */
 .csslider .cssl-input.-step6:checked ~ .cssl-nav .cssl-arrow:nth-child(7) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 144, ../scss/_slider.scss */
+/* line 123, ../scss/_slider.scss */
 .csslider .cssl-input.-step7:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -1980px));
 }
-/* line 148, ../scss/_slider.scss */
+/* line 127, ../scss/_slider.scss */
 .csslider .cssl-input.-step7:checked ~ .cssl-nav .cssl-arrow:nth-child(6) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 153, ../scss/_slider.scss */
+/* line 132, ../scss/_slider.scss */
 .csslider .cssl-input.-step7:checked ~ .cssl-nav .cssl-arrow:nth-child(8) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 144, ../scss/_slider.scss */
+/* line 123, ../scss/_slider.scss */
 .csslider .cssl-input.-step8:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -2310px));
 }
-/* line 148, ../scss/_slider.scss */
+/* line 127, ../scss/_slider.scss */
 .csslider .cssl-input.-step8:checked ~ .cssl-nav .cssl-arrow:nth-child(7) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 153, ../scss/_slider.scss */
+/* line 132, ../scss/_slider.scss */
 .csslider .cssl-input.-step8:checked ~ .cssl-nav .cssl-arrow:nth-child(9) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 144, ../scss/_slider.scss */
+/* line 123, ../scss/_slider.scss */
 .csslider .cssl-input.-step9:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -2640px));
 }
-/* line 148, ../scss/_slider.scss */
+/* line 127, ../scss/_slider.scss */
 .csslider .cssl-input.-step9:checked ~ .cssl-nav .cssl-arrow:nth-child(8) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 153, ../scss/_slider.scss */
+/* line 132, ../scss/_slider.scss */
 .csslider .cssl-input.-step9:checked ~ .cssl-nav .cssl-arrow:nth-child(10) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 144, ../scss/_slider.scss */
+/* line 123, ../scss/_slider.scss */
 .csslider .cssl-input.-step10:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -2970px));
 }
-/* line 148, ../scss/_slider.scss */
+/* line 127, ../scss/_slider.scss */
 .csslider .cssl-input.-step10:checked ~ .cssl-nav .cssl-arrow:nth-child(9) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 153, ../scss/_slider.scss */
+/* line 132, ../scss/_slider.scss */
 .csslider .cssl-input.-step10:checked ~ .cssl-nav .cssl-arrow:nth-child(11) {
   display: flex;
   right: 0;
 }
-/* line 162, ../scss/_slider.scss */
+/* line 141, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
+}
+
+/* line 1, ../scss/_modal.scss */
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+/* line 13, ../scss/_modal.scss */
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 18, ../scss/_modal.scss */
+.modal-container {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 29, ../scss/_modal.scss */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 35, ../scss/_modal.scss */
+.modal-header h3 {
+  font-size: 20px;
+  margin-top: 0;
+  color: #444;
+}
+
+/* line 41, ../scss/_modal.scss */
+.modal-close {
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  margin: 0 -5px;
+  cursor: pointer;
+}
+
+/* line 49, ../scss/_modal.scss */
+.modal-body {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 55, ../scss/_modal.scss */
+.modal-img {
+  margin: 10px;
+}
+
+/* line 59, ../scss/_modal.scss */
+.modal-default-button {
+  float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+/* line 72, ../scss/_modal.scss */
+.modal-enter {
+  opacity: 0;
+}
+
+/* line 76, ../scss/_modal.scss */
+.modal-leave-active {
+  opacity: 0;
+}
+
+/* line 80, ../scss/_modal.scss */
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

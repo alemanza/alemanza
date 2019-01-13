@@ -10,9 +10,12 @@ $itemWidth: 300px;
 $margins: 30px;
   
 .csslider {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: auto;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     .cssl-container {
         position: relative;
         margin: auto;
@@ -40,44 +43,17 @@ $margins: 30px;
         display: flex;
         transition: transform .4s cubic-bezier(.19,.63,.44,1.16);
     }
-  
-    .cssl-arrow {
-        transition: color .5s;
-        top: calc(50% - 25px - 5px);
-        height: 40px;    
-        width: 40px;
-        padding: 10px;
-        position: absolute;
-        display: none;
-        z-index: 1;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        opacity: .6;
-        font-size: 40px;
-        font-family: 'cssl-icons';
-        cursor: pointer;
-        &:before {
-            content: "\e902";
-        }
-        &:hover {
-            transition-duration: 0s;
-            color: #444;
-        }
-    }
+
   
     .cssl-card {
         box-shadow: 0 8px 20px 0 rgba(0,0,0,.1);
         border-radius: 8px;
         overflow: hidden;
-        width: 300px;
-        min-width: 300px;
-        height: 416px;
-        margin-left: 30px;
+        width: 280px;
+        min-width: 280px;
+        // height: 416px;
+        margin: 15px;
         background-color: #FFF;
-        &:first-of-type {
-            margin-left: 0;
-        }
     }
     .cssl-img {
         width: 100%;
@@ -85,11 +61,11 @@ $margins: 30px;
     }
   
     .cssl-content {
-        padding: 17px 20px 20px;
+        padding: 15px 20px 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 116px;
+        // height: 116px;
         box-sizing: border-box;        
     }
     .cssl-title {
@@ -103,13 +79,16 @@ $margins: 30px;
         color: #888;
     }
     .cssl-subcontent {
+        margin: 15px -20px 0;
+        border-top: solid 1px #ECECEC;
+        padding: 15px 20px 5px;
         display: flex;
-        color: #FF8626;
+        color: #444;
     }
     .cssl-rating {
-        font-size: 13px;
+        font-size: 24px;
         padding-right: 5px;
-        font-weight: 700;
+        font-weight: normal;
     }
     .cssl-icon {
         font-size: 10px;

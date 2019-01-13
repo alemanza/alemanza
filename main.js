@@ -3,7 +3,8 @@ var items = [
         name: "Big Ben",
         description: "London, United Kingdom",
         imgURL: "big-ben",
-        rating: 4.2
+        rating: '$2000.00',
+        modalImg: ['1','2','3']
     },
     {
         name: "Sagrada Familia",
@@ -38,14 +39,19 @@ var items = [
 ]
 
 
+// register modal component
+Vue.component('modal', {
+    template: '#modal-template'
+  })
+
 var app = new Vue({
     el: '#app',
     data: {
-        cards: items
-    },
-    methods: {
-        isMidStar(i) {
-              return this.cards[i].rating % 1 != 0
-        }    
-    }    
+        cards: items,
+        showModal: false,
+        modal: null
+    }
 })
+
+
+

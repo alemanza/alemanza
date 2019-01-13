@@ -7,66 +7,85 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="css/main.css">
     
-    <title>RB Slider</title>
+    <title>Venta de garage</title>
 </head>
 <body>
-    <div id="app" class="hello">
-        <header>
-          <h1>CSSlider</h1>
-        </header>
-        <section class="wrapper">
-          <div class="csslider">
-            <input v-for="(card, i) in cards.length - 2"
-              :key="i"
-              type="radio"
-              name="csslider"
-              :id="`pos${i+1}`"
-              :class="`cssl-input -step${i+1}`"
-              :checked="i === 0"
-            />
-    
-            <div class="cssl-nav">
-              <label v-for="(card, i) in cards.length - 2"
-                :key="i"
-                :for="`pos${i+1}`"
-                class="cssl-arrow"
-              />
+      
+  <div id="app" class="hello">
+    <header>
+      <h1>VENDEMOS!!!</h1>
+    </header>
+    <section class="wrapper">
+      <div class="csslider">
+        <div class="cssl-card" v-for="(card, i) in cards" :key="i" :id="`md-${card.imgURL}`" @click="showModal = true; modal = card">
+          <figure class="cssl-figure">
+            <img class="cssl-img" :src="`./assets/images/${card.imgURL}.jpg`" alt="Big Ben">
+          </figure>
+          <div class="cssl-content">
+            <div class="cssl-text-content">
+              <h3 class="cssl-title">{{card.name}}</h3>
+              <p class="cssl-description">{{card.description}}</p>
             </div>
-    
-            <div class="cssl-container">
-              <div class="cssl-translation">
-                
-                <div class="cssl-card" v-for="(card, i) in cards" :key="i">
-                  <figure class="cssl-figure">
-                    <img class="cssl-img" :src="`./assets/images/${card.imgURL}.jpg`" alt="Big Ben">
-                  </figure>
-                  <div class="cssl-content">
-                    <div class="cssl-text-content">
-                      <h3 class="cssl-title">{{card.name}}</h3>
-                      <p class="cssl-description">{{card.description}}</p>
-                    </div>
-                    <div class="cssl-subcontent">
-                      <span class="cssl-rating">{{card.rating}}</span>
-                      <span class="cssl-stars">
-                        <span v-for="(star, e) in Math.ceil(card.rating)"
-                          :key="e"
-                          :class="['cssl-icon',
-                              isMidStar(i) && e === Math.ceil(card.rating) -1 ? 'icon-mid-star' : 'icon-star'
-                            ]"
-                        />
-                      </span>
-                    </div>
-                  </div>
-                </div>      
-              </div>
+            <div class="cssl-subcontent">
+              <span class="cssl-rating">{{card.rating}}</span>
             </div>
           </div>
-        </section>
-    </div>
-    <script src="main.js"></script>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <modal v-if="showModal" @close="showModal = false">
+      <h3 slot="header">{{modal.name}}</h3>
+      <div slot="body">
+        <div class="modal-img" v-for="(img, i) in modal.modalImg" :key="i">
+            {{img}}
+        </div>
+      </div>
+    </modal>
+
+  </div>
+
+
+  <!-- template for the modal component -->
+  <script type="text/x-template" id="modal-template">
+    <transition name="modal">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-container">
+
+            <div class="modal-header">
+              <slot name="header">
+                default header
+              </slot>
+              <svg @click="$emit('close')" class="modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"/></svg>
+            </div>
+
+            <div class="modal-body">
+              <slot name="body">
+                default body
+              </slot>
+            </div>
+
+            <div class="modal-footer">
+              <slot name="footer">
+                default footer
+              </slot>
+            </div>
+          </div>
+        </div>
+      </div>
+    </transition>
+  </script>    
+
+  <script src="main.js"></script>
+
 </body>
 </html>
 
+
+
+		
 
 
 
