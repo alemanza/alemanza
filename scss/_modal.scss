@@ -1,7 +1,19 @@
+.modal-header-mobile {
+  display: none;
+  background-color: #FFF;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
 .modal-mask {
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   position: fixed;
   overflow: auto;
-  z-index: 9998;
+  z-index: 2;
   top: 0;
   left: 0;
   bottom: 0;

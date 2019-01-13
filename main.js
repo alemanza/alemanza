@@ -103,7 +103,7 @@ var app = new Vue({
     data: {
         cards: items,
         showModal: false,
-        item: null
+        item: {}
     },
     methods: {
         openModal() {

@@ -121,10 +121,24 @@ h1 {
 }
 
 /* line 1, ../scss/_modal.scss */
+.modal-header-mobile {
+  display: none;
+  background-color: #FFF;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+/* line 11, ../scss/_modal.scss */
 .modal-mask {
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   position: fixed;
   overflow: auto;
-  z-index: 9998;
+  z-index: 2;
   top: 0;
   left: 0;
   bottom: 0;
@@ -136,18 +150,18 @@ h1 {
   box-sizing: border-box;
 }
 
-/* line 16, ../scss/_modal.scss */
+/* line 28, ../scss/_modal.scss */
 .modal-wrapper {
   margin: 80px 0;
 }
-/* line 18, ../scss/_modal.scss */
+/* line 30, ../scss/_modal.scss */
 .modal-wrapper:after {
   content: '';
   height: 80px;
   display: block;
 }
 
-/* line 25, ../scss/_modal.scss */
+/* line 37, ../scss/_modal.scss */
 .modal-container {
   max-width: 900px;
   margin: 0px auto;
@@ -159,26 +173,26 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* line 36, ../scss/_modal.scss */
+/* line 48, ../scss/_modal.scss */
 .modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 42, ../scss/_modal.scss */
+/* line 54, ../scss/_modal.scss */
 .modal-header h3 {
   font-size: 20px;
   margin-top: 0;
   color: #444;
 }
 
-/* line 48, ../scss/_modal.scss */
+/* line 60, ../scss/_modal.scss */
 .modal-item-container {
   width: 100%;
 }
 
-/* line 53, ../scss/_modal.scss */
+/* line 65, ../scss/_modal.scss */
 .modal-close {
   width: 24px;
   height: 24px;
@@ -187,28 +201,28 @@ h1 {
   cursor: pointer;
 }
 
-/* line 61, ../scss/_modal.scss */
+/* line 73, ../scss/_modal.scss */
 .modal-body {
   margin: 20px 0;
   justify-content: center;
 }
 
-/* line 67, ../scss/_modal.scss */
+/* line 79, ../scss/_modal.scss */
 .modal-item-img {
   width: 100%;
 }
 
-/* line 71, ../scss/_modal.scss */
+/* line 83, ../scss/_modal.scss */
 .modal-enter {
   opacity: 0;
 }
 
-/* line 75, ../scss/_modal.scss */
+/* line 87, ../scss/_modal.scss */
 .modal-leave-active {
   opacity: 0;
 }
 
-/* line 79, ../scss/_modal.scss */
+/* line 91, ../scss/_modal.scss */
 .modal-enter .modal-container,
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
@@ -339,15 +353,40 @@ h1 {
 
   /* line 118, ../scss/_slider.scss */
   .modal-wrapper {
+    background-color: #FFF;
     margin: 0;
+    padding-top: 64px;
   }
-  /* line 120, ../scss/_slider.scss */
+  /* line 122, ../scss/_slider.scss */
   .modal-wrapper:after {
     content: none;
   }
 
-  /* line 124, ../scss/_slider.scss */
+  /* line 126, ../scss/_slider.scss */
   .modal-container {
     border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* line 130, ../scss/_slider.scss */
+  .modal-header-mobile {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* line 134, ../scss/_slider.scss */
+  .modal-header-desktop {
+    display: none;
+  }
+
+  /* line 137, ../scss/_slider.scss */
+  .modal-body {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 143, ../scss/_slider.scss */
+  .modal-header-mobile {
+    display: none !important;
   }
 }

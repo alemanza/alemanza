@@ -116,13 +116,32 @@ $margins: 30px;
         }
     }
     .modal-wrapper {
+        background-color: #FFF;
         margin: 0;
+        padding-top: 64px;
         &:after {
             content: none;
         }
     }
     .modal-container {
         border-radius: 0;
+        box-shadow: none;
+    }
+    .modal-header-mobile {
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0,0,0,.1); 
+    }
+    .modal-header-desktop {
+        display: none;
+    }
+    .modal-body {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .modal-header-mobile {
+        display: none !important;
     }
 }
   
