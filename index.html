@@ -17,7 +17,7 @@
     </header>
     <section class="wrapper">
       <div class="csslider">
-        <div class="cssl-card" v-for="(card, i) in cards" :key="i" :id="`md-${card.imgURL}`" @click="openModal(); item = card">
+        <div class="cssl-card" v-for="(card, i) in cards" :key="i" @click="openModal(); item = card">
           <figure class="cssl-figure">
             <img class="cssl-img" :src="`./assets/images/${card.folder}/cover.jpg`" alt="Big Ben">
           </figure>

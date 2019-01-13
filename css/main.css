@@ -120,317 +120,6 @@ h1 {
   margin: 50px auto;
 }
 
-/* line 3, ../scss/_slider.scss */
-.cssl-nav {
-  display: flex;
-}
-
-/* line 12, ../scss/_slider.scss */
-.csslider {
-  max-width: 1280px;
-  margin: auto;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-/* line 19, ../scss/_slider.scss */
-.csslider .cssl-container {
-  position: relative;
-  margin: auto;
-  width: 960px;
-  overflow: hidden;
-  padding: 10px 20px 20px;
-}
-/* line 25, ../scss/_slider.scss */
-.csslider .cssl-container:before, .csslider .cssl-container:after {
-  z-index: 1;
-  content: '';
-  position: absolute;
-  height: 100%;
-  top: 0;
-  width: 20px;
-}
-/* line 33, ../scss/_slider.scss */
-.csslider .cssl-container:before {
-  left: 0;
-  background-image: linear-gradient(to left, transparent, #F5F5F5);
-}
-/* line 37, ../scss/_slider.scss */
-.csslider .cssl-container:after {
-  right: 0;
-  background-image: linear-gradient(to right, transparent, #F5F5F5);
-}
-/* line 42, ../scss/_slider.scss */
-.csslider .cssl-translation {
-  display: flex;
-  transition: transform 0.4s cubic-bezier(0.19, 0.63, 0.44, 1.16);
-}
-/* line 48, ../scss/_slider.scss */
-.csslider .cssl-card {
-  cursor: pointer;
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  width: 280px;
-  min-width: 280px;
-  margin: 15px;
-  background-color: #FFF;
-}
-/* line 59, ../scss/_slider.scss */
-.csslider .cssl-img {
-  width: 100%;
-  display: block;
-}
-/* line 64, ../scss/_slider.scss */
-.csslider .cssl-content {
-  padding: 15px 20px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-/* line 72, ../scss/_slider.scss */
-.csslider .cssl-title {
-  font-size: 24px;
-  color: #444;
-  letter-spacing: -.03em;
-  padding-bottom: 5px;
-}
-/* line 78, ../scss/_slider.scss */
-.csslider .cssl-description {
-  font-size: 13px;
-  color: #888;
-}
-/* line 82, ../scss/_slider.scss */
-.csslider .cssl-subcontent {
-  margin: 15px -20px 0;
-  border-top: solid 1px #ECECEC;
-  padding: 15px 20px 5px;
-  display: flex;
-  color: #444;
-}
-/* line 89, ../scss/_slider.scss */
-.csslider .cssl-rating {
-  font-size: 24px;
-  padding-right: 5px;
-  font-weight: normal;
-}
-/* line 94, ../scss/_slider.scss */
-.csslider .cssl-icon {
-  font-size: 10px;
-  margin-left: 3px;
-}
-/* line 98, ../scss/_slider.scss */
-.csslider .cssl-stars {
-  display: flex;
-  align-items: center;
-}
-/* line 102, ../scss/_slider.scss */
-.csslider .cssl-input {
-  display: none;
-}
-/* line 107, ../scss/_slider.scss */
-.csslider .cssl-input.-step1:checked ~ .cssl-container {
-  transform: translateX(0);
-}
-/* line 111, ../scss/_slider.scss */
-.csslider .cssl-input.-step1:checked ~ .cssl-nav .cssl-arrow:last-of-type {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 116, ../scss/_slider.scss */
-.csslider .cssl-input.-step1:checked ~ .cssl-nav .cssl-arrow:nth-child(2) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-/* line 124, ../scss/_slider.scss */
-.csslider .cssl-input.-step2:checked ~ .cssl-container .cssl-translation {
-  transform: translateX(calc( -330px));
-}
-/* line 128, ../scss/_slider.scss */
-.csslider .cssl-input.-step2:checked ~ .cssl-nav .cssl-arrow:nth-child(1) {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 133, ../scss/_slider.scss */
-.csslider .cssl-input.-step2:checked ~ .cssl-nav .cssl-arrow:nth-child(3) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-/* line 124, ../scss/_slider.scss */
-.csslider .cssl-input.-step3:checked ~ .cssl-container .cssl-translation {
-  transform: translateX(calc( -660px));
-}
-/* line 128, ../scss/_slider.scss */
-.csslider .cssl-input.-step3:checked ~ .cssl-nav .cssl-arrow:nth-child(2) {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 133, ../scss/_slider.scss */
-.csslider .cssl-input.-step3:checked ~ .cssl-nav .cssl-arrow:nth-child(4) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-/* line 124, ../scss/_slider.scss */
-.csslider .cssl-input.-step4:checked ~ .cssl-container .cssl-translation {
-  transform: translateX(calc( -990px));
-}
-/* line 128, ../scss/_slider.scss */
-.csslider .cssl-input.-step4:checked ~ .cssl-nav .cssl-arrow:nth-child(3) {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 133, ../scss/_slider.scss */
-.csslider .cssl-input.-step4:checked ~ .cssl-nav .cssl-arrow:nth-child(5) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-/* line 124, ../scss/_slider.scss */
-.csslider .cssl-input.-step5:checked ~ .cssl-container .cssl-translation {
-  transform: translateX(calc( -1320px));
-}
-/* line 128, ../scss/_slider.scss */
-.csslider .cssl-input.-step5:checked ~ .cssl-nav .cssl-arrow:nth-child(4) {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 133, ../scss/_slider.scss */
-.csslider .cssl-input.-step5:checked ~ .cssl-nav .cssl-arrow:nth-child(6) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-/* line 124, ../scss/_slider.scss */
-.csslider .cssl-input.-step6:checked ~ .cssl-container .cssl-translation {
-  transform: translateX(calc( -1650px));
-}
-/* line 128, ../scss/_slider.scss */
-.csslider .cssl-input.-step6:checked ~ .cssl-nav .cssl-arrow:nth-child(5) {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 133, ../scss/_slider.scss */
-.csslider .cssl-input.-step6:checked ~ .cssl-nav .cssl-arrow:nth-child(7) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-/* line 124, ../scss/_slider.scss */
-.csslider .cssl-input.-step7:checked ~ .cssl-container .cssl-translation {
-  transform: translateX(calc( -1980px));
-}
-/* line 128, ../scss/_slider.scss */
-.csslider .cssl-input.-step7:checked ~ .cssl-nav .cssl-arrow:nth-child(6) {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 133, ../scss/_slider.scss */
-.csslider .cssl-input.-step7:checked ~ .cssl-nav .cssl-arrow:nth-child(8) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-/* line 124, ../scss/_slider.scss */
-.csslider .cssl-input.-step8:checked ~ .cssl-container .cssl-translation {
-  transform: translateX(calc( -2310px));
-}
-/* line 128, ../scss/_slider.scss */
-.csslider .cssl-input.-step8:checked ~ .cssl-nav .cssl-arrow:nth-child(7) {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 133, ../scss/_slider.scss */
-.csslider .cssl-input.-step8:checked ~ .cssl-nav .cssl-arrow:nth-child(9) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-/* line 124, ../scss/_slider.scss */
-.csslider .cssl-input.-step9:checked ~ .cssl-container .cssl-translation {
-  transform: translateX(calc( -2640px));
-}
-/* line 128, ../scss/_slider.scss */
-.csslider .cssl-input.-step9:checked ~ .cssl-nav .cssl-arrow:nth-child(8) {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 133, ../scss/_slider.scss */
-.csslider .cssl-input.-step9:checked ~ .cssl-nav .cssl-arrow:nth-child(10) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-/* line 124, ../scss/_slider.scss */
-.csslider .cssl-input.-step10:checked ~ .cssl-container .cssl-translation {
-  transform: translateX(calc( -2970px));
-}
-/* line 128, ../scss/_slider.scss */
-.csslider .cssl-input.-step10:checked ~ .cssl-nav .cssl-arrow:nth-child(9) {
-  display: flex;
-  left: 0;
-  transform: rotateZ(180deg);
-}
-/* line 133, ../scss/_slider.scss */
-.csslider .cssl-input.-step10:checked ~ .cssl-nav .cssl-arrow:nth-child(11) {
-  display: flex;
-  right: 0;
-}
-/* line 142, ../scss/_slider.scss */
-.csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
-  display: flex;
-  right: 0;
-}
-
 /* line 1, ../scss/_modal.scss */
 .modal-mask {
   position: fixed;
@@ -440,7 +129,7 @@ h1 {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   transition: opacity .3s ease;
   display: flex;
   justify-content: center;
@@ -524,4 +213,141 @@ h1 {
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+/* line 3, ../scss/_slider.scss */
+.cssl-nav {
+  display: flex;
+}
+
+/* line 12, ../scss/_slider.scss */
+.csslider {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 19, ../scss/_slider.scss */
+.csslider .cssl-container {
+  position: relative;
+  margin: auto;
+  width: 960px;
+  overflow: hidden;
+  padding: 10px 20px 20px;
+}
+/* line 25, ../scss/_slider.scss */
+.csslider .cssl-container:before, .csslider .cssl-container:after {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 20px;
+}
+/* line 33, ../scss/_slider.scss */
+.csslider .cssl-container:before {
+  left: 0;
+  background-image: linear-gradient(to left, transparent, #F5F5F5);
+}
+/* line 37, ../scss/_slider.scss */
+.csslider .cssl-container:after {
+  right: 0;
+  background-image: linear-gradient(to right, transparent, #F5F5F5);
+}
+/* line 42, ../scss/_slider.scss */
+.csslider .cssl-translation {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.19, 0.63, 0.44, 1.16);
+}
+/* line 48, ../scss/_slider.scss */
+.csslider .cssl-card {
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 280px;
+  min-width: 280px;
+  margin: 15px;
+  background-color: #FFF;
+}
+/* line 59, ../scss/_slider.scss */
+.csslider .cssl-img {
+  width: 100%;
+  display: block;
+}
+/* line 64, ../scss/_slider.scss */
+.csslider .cssl-content {
+  padding: 15px 20px 75px;
+  box-sizing: border-box;
+}
+/* line 68, ../scss/_slider.scss */
+.csslider .cssl-title {
+  font-size: 24px;
+  color: #444;
+  letter-spacing: -.03em;
+  padding-bottom: 5px;
+}
+/* line 74, ../scss/_slider.scss */
+.csslider .cssl-description {
+  font-size: 13px;
+  color: #888;
+}
+/* line 78, ../scss/_slider.scss */
+.csslider .cssl-subcontent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 15px 20px;
+  border-top: solid 1px #ECECEC;
+  display: flex;
+  color: #444;
+}
+/* line 89, ../scss/_slider.scss */
+.csslider .cssl-rating {
+  font-size: 24px;
+  padding-right: 5px;
+  font-weight: normal;
+}
+/* line 94, ../scss/_slider.scss */
+.csslider .cssl-icon {
+  font-size: 10px;
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 104, ../scss/_slider.scss */
+  body {
+    padding: 40px 0 0;
+  }
+
+  /* line 107, ../scss/_slider.scss */
+  .wrapper {
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  /* line 113, ../scss/_slider.scss */
+  .csslider .cssl-card {
+    width: auto;
+    margin: 10px 20px;
+  }
+
+  /* line 118, ../scss/_slider.scss */
+  .modal-wrapper {
+    margin: 0;
+  }
+  /* line 120, ../scss/_slider.scss */
+  .modal-wrapper:after {
+    content: none;
+  }
+
+  /* line 124, ../scss/_slider.scss */
+  .modal-container {
+    border-radius: 0;
+  }
 }

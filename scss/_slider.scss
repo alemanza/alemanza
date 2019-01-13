@@ -47,12 +47,12 @@ $margins: 30px;
   
     .cssl-card {
         cursor: pointer;
+        position: relative;
         box-shadow: 0 8px 20px 0 rgba(0,0,0,.1);
         border-radius: 8px;
         overflow: hidden;
         width: 280px;
         min-width: 280px;
-        // height: 416px;
         margin: 15px;
         background-color: #FFF;
     }
@@ -62,11 +62,7 @@ $margins: 30px;
     }
   
     .cssl-content {
-        padding: 15px 20px 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        // height: 116px;
+        padding: 15px 20px 75px;
         box-sizing: border-box;        
     }
     .cssl-title {
@@ -80,9 +76,13 @@ $margins: 30px;
         color: #888;
     }
     .cssl-subcontent {
-        margin: 15px -20px 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 15px 20px;
         border-top: solid 1px #ECECEC;
-        padding: 15px 20px 5px;
         display: flex;
         color: #444;
     }
@@ -95,57 +95,34 @@ $margins: 30px;
         font-size: 10px;
         margin-left: 3px;
     }
-    .cssl-stars {
-        display: flex;
-        align-items: center;
+    
+    
+}
+
+
+@media screen and (max-width: 767px){
+    body {
+        padding: 40px 0 0;
     }
-    .cssl-input {
-        display: none;
-        @for $i from 1 through 10 {
-            @if $i == 1 {
-                &.-step#{$i}:checked ~ {
-                    .cssl-container {
-                        transform: translateX(0);
-                    }
-                    .cssl-nav .cssl-arrow {
-                        &:last-of-type {
-                            display: flex;
-                            left: 0;
-                            transform: rotateZ(180deg);
-                        }
-                        &:nth-child(2) {
-                            display: flex;
-                            right: 0;
-                        }
-                    }
-                }
-            } @else {
-                &.-step#{$i}:checked ~ {
-                    .cssl-container .cssl-translation{
-                        transform: translateX(calc( -#{ ($i - 1) * ($itemWidth + $margins) }) );
-                    }
-                    .cssl-nav .cssl-arrow {
-                        &:nth-child(#{$i - 1}) {
-                            display: flex;
-                            left: 0;
-                            transform: rotateZ(180deg);
-                        }
-                        &:nth-child(#{$i + 1}) {
-                            display: flex;
-                            right: 0;
-                        }
-                    }
-                }
-            }
-            &.cssl-input:last-of-type:checked ~ {
-                .cssl-nav .cssl-arrow {
-                    &:first-of-type {
-                        display: flex;
-                        right: 0;
-                    }
-                }
-            }
+    .wrapper {
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .csslider {
+        .cssl-card {
+            width: auto;
+            margin: 10px 20px;
         }
+    }
+    .modal-wrapper {
+        margin: 0;
+        &:after {
+            content: none;
+        }
+    }
+    .modal-container {
+        border-radius: 0;
     }
 }
   
