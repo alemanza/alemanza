@@ -168,6 +168,7 @@ h1 {
 }
 /* line 48, ../scss/_slider.scss */
 .csslider .cssl-card {
+  cursor: pointer;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -176,12 +177,12 @@ h1 {
   margin: 15px;
   background-color: #FFF;
 }
-/* line 58, ../scss/_slider.scss */
+/* line 59, ../scss/_slider.scss */
 .csslider .cssl-img {
   width: 100%;
   display: block;
 }
-/* line 63, ../scss/_slider.scss */
+/* line 64, ../scss/_slider.scss */
 .csslider .cssl-content {
   padding: 15px 20px 10px;
   display: flex;
@@ -189,19 +190,19 @@ h1 {
   justify-content: space-between;
   box-sizing: border-box;
 }
-/* line 71, ../scss/_slider.scss */
+/* line 72, ../scss/_slider.scss */
 .csslider .cssl-title {
   font-size: 24px;
   color: #444;
   letter-spacing: -.03em;
   padding-bottom: 5px;
 }
-/* line 77, ../scss/_slider.scss */
+/* line 78, ../scss/_slider.scss */
 .csslider .cssl-description {
   font-size: 13px;
   color: #888;
 }
-/* line 81, ../scss/_slider.scss */
+/* line 82, ../scss/_slider.scss */
 .csslider .cssl-subcontent {
   margin: 15px -20px 0;
   border-top: solid 1px #ECECEC;
@@ -209,222 +210,222 @@ h1 {
   display: flex;
   color: #444;
 }
-/* line 88, ../scss/_slider.scss */
+/* line 89, ../scss/_slider.scss */
 .csslider .cssl-rating {
   font-size: 24px;
   padding-right: 5px;
   font-weight: normal;
 }
-/* line 93, ../scss/_slider.scss */
+/* line 94, ../scss/_slider.scss */
 .csslider .cssl-icon {
   font-size: 10px;
   margin-left: 3px;
 }
-/* line 97, ../scss/_slider.scss */
+/* line 98, ../scss/_slider.scss */
 .csslider .cssl-stars {
   display: flex;
   align-items: center;
 }
-/* line 101, ../scss/_slider.scss */
+/* line 102, ../scss/_slider.scss */
 .csslider .cssl-input {
   display: none;
 }
-/* line 106, ../scss/_slider.scss */
+/* line 107, ../scss/_slider.scss */
 .csslider .cssl-input.-step1:checked ~ .cssl-container {
   transform: translateX(0);
 }
-/* line 110, ../scss/_slider.scss */
+/* line 111, ../scss/_slider.scss */
 .csslider .cssl-input.-step1:checked ~ .cssl-nav .cssl-arrow:last-of-type {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 115, ../scss/_slider.scss */
+/* line 116, ../scss/_slider.scss */
 .csslider .cssl-input.-step1:checked ~ .cssl-nav .cssl-arrow:nth-child(2) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 123, ../scss/_slider.scss */
+/* line 124, ../scss/_slider.scss */
 .csslider .cssl-input.-step2:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -330px));
 }
-/* line 127, ../scss/_slider.scss */
+/* line 128, ../scss/_slider.scss */
 .csslider .cssl-input.-step2:checked ~ .cssl-nav .cssl-arrow:nth-child(1) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 132, ../scss/_slider.scss */
+/* line 133, ../scss/_slider.scss */
 .csslider .cssl-input.-step2:checked ~ .cssl-nav .cssl-arrow:nth-child(3) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 123, ../scss/_slider.scss */
+/* line 124, ../scss/_slider.scss */
 .csslider .cssl-input.-step3:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -660px));
 }
-/* line 127, ../scss/_slider.scss */
+/* line 128, ../scss/_slider.scss */
 .csslider .cssl-input.-step3:checked ~ .cssl-nav .cssl-arrow:nth-child(2) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 132, ../scss/_slider.scss */
+/* line 133, ../scss/_slider.scss */
 .csslider .cssl-input.-step3:checked ~ .cssl-nav .cssl-arrow:nth-child(4) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 123, ../scss/_slider.scss */
+/* line 124, ../scss/_slider.scss */
 .csslider .cssl-input.-step4:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -990px));
 }
-/* line 127, ../scss/_slider.scss */
+/* line 128, ../scss/_slider.scss */
 .csslider .cssl-input.-step4:checked ~ .cssl-nav .cssl-arrow:nth-child(3) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 132, ../scss/_slider.scss */
+/* line 133, ../scss/_slider.scss */
 .csslider .cssl-input.-step4:checked ~ .cssl-nav .cssl-arrow:nth-child(5) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 123, ../scss/_slider.scss */
+/* line 124, ../scss/_slider.scss */
 .csslider .cssl-input.-step5:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -1320px));
 }
-/* line 127, ../scss/_slider.scss */
+/* line 128, ../scss/_slider.scss */
 .csslider .cssl-input.-step5:checked ~ .cssl-nav .cssl-arrow:nth-child(4) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 132, ../scss/_slider.scss */
+/* line 133, ../scss/_slider.scss */
 .csslider .cssl-input.-step5:checked ~ .cssl-nav .cssl-arrow:nth-child(6) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 123, ../scss/_slider.scss */
+/* line 124, ../scss/_slider.scss */
 .csslider .cssl-input.-step6:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -1650px));
 }
-/* line 127, ../scss/_slider.scss */
+/* line 128, ../scss/_slider.scss */
 .csslider .cssl-input.-step6:checked ~ .cssl-nav .cssl-arrow:nth-child(5) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 132, ../scss/_slider.scss */
+/* line 133, ../scss/_slider.scss */
 .csslider .cssl-input.-step6:checked ~ .cssl-nav .cssl-arrow:nth-child(7) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 123, ../scss/_slider.scss */
+/* line 124, ../scss/_slider.scss */
 .csslider .cssl-input.-step7:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -1980px));
 }
-/* line 127, ../scss/_slider.scss */
+/* line 128, ../scss/_slider.scss */
 .csslider .cssl-input.-step7:checked ~ .cssl-nav .cssl-arrow:nth-child(6) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 132, ../scss/_slider.scss */
+/* line 133, ../scss/_slider.scss */
 .csslider .cssl-input.-step7:checked ~ .cssl-nav .cssl-arrow:nth-child(8) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 123, ../scss/_slider.scss */
+/* line 124, ../scss/_slider.scss */
 .csslider .cssl-input.-step8:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -2310px));
 }
-/* line 127, ../scss/_slider.scss */
+/* line 128, ../scss/_slider.scss */
 .csslider .cssl-input.-step8:checked ~ .cssl-nav .cssl-arrow:nth-child(7) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 132, ../scss/_slider.scss */
+/* line 133, ../scss/_slider.scss */
 .csslider .cssl-input.-step8:checked ~ .cssl-nav .cssl-arrow:nth-child(9) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 123, ../scss/_slider.scss */
+/* line 124, ../scss/_slider.scss */
 .csslider .cssl-input.-step9:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -2640px));
 }
-/* line 127, ../scss/_slider.scss */
+/* line 128, ../scss/_slider.scss */
 .csslider .cssl-input.-step9:checked ~ .cssl-nav .cssl-arrow:nth-child(8) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 132, ../scss/_slider.scss */
+/* line 133, ../scss/_slider.scss */
 .csslider .cssl-input.-step9:checked ~ .cssl-nav .cssl-arrow:nth-child(10) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
 }
-/* line 123, ../scss/_slider.scss */
+/* line 124, ../scss/_slider.scss */
 .csslider .cssl-input.-step10:checked ~ .cssl-container .cssl-translation {
   transform: translateX(calc( -2970px));
 }
-/* line 127, ../scss/_slider.scss */
+/* line 128, ../scss/_slider.scss */
 .csslider .cssl-input.-step10:checked ~ .cssl-nav .cssl-arrow:nth-child(9) {
   display: flex;
   left: 0;
   transform: rotateZ(180deg);
 }
-/* line 132, ../scss/_slider.scss */
+/* line 133, ../scss/_slider.scss */
 .csslider .cssl-input.-step10:checked ~ .cssl-nav .cssl-arrow:nth-child(11) {
   display: flex;
   right: 0;
 }
-/* line 141, ../scss/_slider.scss */
+/* line 142, ../scss/_slider.scss */
 .csslider .cssl-input.cssl-input:last-of-type:checked ~ .cssl-nav .cssl-arrow:first-of-type {
   display: flex;
   right: 0;
@@ -433,23 +434,31 @@ h1 {
 /* line 1, ../scss/_modal.scss */
 .modal-mask {
   position: fixed;
+  overflow: auto;
   z-index: 9998;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: table;
   transition: opacity .3s ease;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-/* line 13, ../scss/_modal.scss */
+/* line 16, ../scss/_modal.scss */
 .modal-wrapper {
-  display: table-cell;
-  vertical-align: middle;
+  margin: 80px 0;
+}
+/* line 18, ../scss/_modal.scss */
+.modal-wrapper:after {
+  content: '';
+  height: 80px;
+  display: block;
 }
 
-/* line 18, ../scss/_modal.scss */
+/* line 25, ../scss/_modal.scss */
 .modal-container {
   max-width: 900px;
   margin: 0px auto;
@@ -461,21 +470,26 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* line 29, ../scss/_modal.scss */
+/* line 36, ../scss/_modal.scss */
 .modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 35, ../scss/_modal.scss */
+/* line 42, ../scss/_modal.scss */
 .modal-header h3 {
   font-size: 20px;
   margin-top: 0;
   color: #444;
 }
 
-/* line 41, ../scss/_modal.scss */
+/* line 48, ../scss/_modal.scss */
+.modal-item-container {
+  width: 100%;
+}
+
+/* line 53, ../scss/_modal.scss */
 .modal-close {
   width: 24px;
   height: 24px;
@@ -484,42 +498,28 @@ h1 {
   cursor: pointer;
 }
 
-/* line 49, ../scss/_modal.scss */
+/* line 61, ../scss/_modal.scss */
 .modal-body {
   margin: 20px 0;
-  display: flex;
   justify-content: center;
 }
 
-/* line 55, ../scss/_modal.scss */
-.modal-img {
-  margin: 10px;
+/* line 67, ../scss/_modal.scss */
+.modal-item-img {
+  width: 100%;
 }
 
-/* line 59, ../scss/_modal.scss */
-.modal-default-button {
-  float: right;
-}
-
-/*
- * The following styles are auto-applied to elements with
- * transition="modal" when their visibility is toggled
- * by Vue.js.
- *
- * You can easily play with the modal transition by editing
- * these styles.
- */
-/* line 72, ../scss/_modal.scss */
+/* line 71, ../scss/_modal.scss */
 .modal-enter {
   opacity: 0;
 }
 
-/* line 76, ../scss/_modal.scss */
+/* line 75, ../scss/_modal.scss */
 .modal-leave-active {
   opacity: 0;
 }
 
-/* line 80, ../scss/_modal.scss */
+/* line 79, ../scss/_modal.scss */
 .modal-enter .modal-container,
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);

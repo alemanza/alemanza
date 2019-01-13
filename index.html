@@ -17,9 +17,9 @@
     </header>
     <section class="wrapper">
       <div class="csslider">
-        <div class="cssl-card" v-for="(card, i) in cards" :key="i" :id="`md-${card.imgURL}`" @click="showModal = true; modal = card">
+        <div class="cssl-card" v-for="(card, i) in cards" :key="i" :id="`md-${card.imgURL}`" @click="openModal(); item = card">
           <figure class="cssl-figure">
-            <img class="cssl-img" :src="`./assets/images/${card.imgURL}.jpg`" alt="Big Ben">
+            <img class="cssl-img" :src="`./assets/images/${card.folder}/cover.jpg`" alt="Big Ben">
           </figure>
           <div class="cssl-content">
             <div class="cssl-text-content">
@@ -35,11 +35,11 @@
     </section>
 
     <!-- MODAL -->
-    <modal v-if="showModal" @close="showModal = false">
-      <h3 slot="header">{{modal.name}}</h3>
+    <modal v-if="showModal" @close="closeModal()">
+      <h3 slot="header">{{item.name}}</h3>
       <div slot="body">
-        <div class="modal-img" v-for="(img, i) in modal.modalImg" :key="i">
-            {{img}}
+        <div class="modal-item-container" v-for="(elem, i) in item.imgLength" :key="i">
+          <img class="modal-item-img" :src="`./assets/images/${item.folder}/${i + 1}.jpg`" :alt="`${item.folder}-${i + 1}`">
         </div>
       </div>
     </modal>
@@ -69,7 +69,7 @@
 
             <div class="modal-footer">
               <slot name="footer">
-                default footer
+                
               </slot>
             </div>
           </div>

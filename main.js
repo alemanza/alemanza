@@ -1,40 +1,38 @@
 var items = [
     {
-        name: "Big Ben",
-        description: "London, United Kingdom",
-        imgURL: "big-ben",
-        rating: '$2000.00',
-        modalImg: ['1','2','3']
+        name: "Epiphone AJ220",
+        description: "Guitarra Acústica Epiphone",
+        rating: '$ 8.000',
+        folder: 'epiphone',
+        imgLength: 5,
     },
     {
-        name: "Sagrada Familia",
-        description: "Barcelona, Spain",
-        imgURL: "sagrada-familia",
-        rating: 4.7
+        name: "Electrolux DF34",
+        description: "Heladera con freezer, frost free",
+        rating: '$ 15.000',
+        folder: 'heladera',
+        imgLength: 3,
     },
     {
-        name: "Eiffel Tower",
-        description: "Paris, France",
-        imgURL: "eiffel-tower",
-        rating: 4.6
+        name: "AKG P120",
+        description: "Micrófono Condenser, como nuevo!",
+        rating: '$ 5.000',
+        folder: 'mic',
+        imgLength: 4,
     },
     {
-        name: "Trevi Fountain",
-        description: "Roma, Italy",
-        imgURL: "trevi-fountain",
-        rating: 4.7
+        name: "Electrolux DF34",
+        description: "Heladera con freezer, frost free",
+        rating: '$ 15.000',
+        folder: 'heladera',
+        imgLength: 3,
     },
     {
-        name: "Bloemenmarkt",
-        description: "Amsterdam, Netherlands",
-        imgURL: "bloemenmarkt",
-        rating: 4.2
-    },
-    {
-        name: "Alexanderplatz",
-        description: "Berlin, Germany",
-        imgURL: "alexanderplatz",
-        rating: 4.5
+        name: "Electrolux DF34",
+        description: "Heladera con freezer, frost free",
+        rating: '$ 15.000',
+        folder: 'heladera',
+        imgLength: 3,
     },
 ]
 
@@ -49,7 +47,17 @@ var app = new Vue({
     data: {
         cards: items,
         showModal: false,
-        modal: null
+        item: null
+    },
+    methods: {
+        openModal() {
+            document.body.style.overflow = 'hidden';
+            this.showModal = true
+        },
+        closeModal() {
+            this.showModal = false
+            document.body.style.overflow = 'auto';
+        }
     }
 })
 
