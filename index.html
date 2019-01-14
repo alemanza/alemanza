@@ -49,6 +49,7 @@
     <modal v-if="showModal" @close="closeModal()">
       <h3 slot="header">{{item.name}}</h3>
       <div slot="body">
+        <p class="modal-item-description">{{item.modalDescription}}</p>
         <div class="modal-item-container" v-for="(elem, i) in item.imgLength" :key="i">
           <img class="modal-item-img" :src="`./assets/images/${item.folder}/${i + 1}.jpg`" :alt="`${item.folder}-${i + 1}`">
         </div>

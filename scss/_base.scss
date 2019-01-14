@@ -54,6 +54,9 @@ strong {
 
 
 @media screen and (max-width: 767px){
+    .-modal{
+        background-color: #FFF;
+    }
     h1{
         font-size: 40px;
     }
@@ -64,6 +67,7 @@ strong {
         align-content: center;    
         h1 {
             padding: 0;
+            max-width: 320px;
         }
         .subtitle {
             margin: 12px 0 22px;

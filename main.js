@@ -5,7 +5,7 @@ var items = [
         rating: '$ 36.000',
         folder: 'asat',
         imgLength: 6,
-        modalDescription: 'Bajo eléctrico para principiantes (pie incluído) Bajo eléctrico para principiantes (pie incluído) Bajo eléctrico para principiantes (pie incluído) Bajo eléctrico para principiantes (pie incluído) Bajo eléctrico para principiantes (pie incluído)'
+        // modalDescription: 'Se vende con micrófonos '
     },
     {
         name: "Bajo eléctrico",
@@ -202,18 +202,24 @@ var app = new Vue({
     data: {
         cards: items,
         showModal: false,
-        item: {}
+        item: {},
+        scroll: null
     },
     methods: {
         openModal() {
             if( !window.matchMedia("(max-width: 767px)") ) {
                 document.body.style.overflow = 'hidden';
+            } else {
+                this.scroll = window.scrollY;
             }
             this.showModal = true
         },
         closeModal() {
             this.showModal = false
             document.body.style.overflow = 'auto';
+            setTimeout(() => {
+                window.scrollTo( 0, this.scroll );
+            },0)
         }
     }
 })
