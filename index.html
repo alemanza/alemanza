@@ -16,10 +16,17 @@
       <h3>{{item.name}}</h3>
       <svg @click="closeModal()" class="modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"/></svg>
     </div>
-    <header>
-      <h1>VENDEMOS!!!</h1>
-    </header>
     <section class="wrapper">
+      <header>
+        <div class="title">
+          <h1>¡Aprovechá! equipá tu casa</h1>
+        </div>
+        <div class="subtitle">
+          <p>Vendemos con urgencia por viaje. Si te interesa algo chateanos por whatsapp: 
+            <strong>11 3568 4864</strong> o por mail: <i>alejandromanza@gmail.com</i>
+          </p>
+        </div>
+      </header>
       <div class="csslider">
         <div class="cssl-card" v-for="(card, i) in cards" :key="i" @click="openModal(); item = card">
           <figure class="cssl-figure">

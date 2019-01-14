@@ -10,7 +10,7 @@ $itemWidth: 300px;
 $margins: 30px;
   
 .csslider {
-    max-width: 1280px;
+    max-width: 1240px;
     margin: auto;
     position: relative;
     display: flex;
@@ -102,16 +102,16 @@ $margins: 30px;
 
 @media screen and (max-width: 767px){
     body {
-        padding: 64px 0 0;
+        padding: 0;
     }
     .wrapper {
-        margin: 20px 0;
+        margin: 32px 0 20px;
         padding: 0;
     }
 
     .csslider {
         .cssl-card {
-            width: auto;
+            width: 100%;
             margin: 10px 20px;
         }
     }
@@ -128,7 +128,11 @@ $margins: 30px;
     }
     .modal-header-mobile {
         display: flex;
-        box-shadow: 0 4px 8px rgba(0,0,0,.1); 
+        box-shadow: 0 4px 8px rgba(0,0,0,.1);
+        border: none;
+        height: 64px;
+        margin: 0;
+        padding: 0 20px;
     }
     .modal-header-desktop {
         display: none;
@@ -138,6 +142,7 @@ $margins: 30px;
     }
 
     .-modal {
+        padding-top: 64px;
         header {
             display: none;
         }

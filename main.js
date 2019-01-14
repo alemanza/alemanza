@@ -5,6 +5,7 @@ var items = [
         rating: '$ 36.000',
         folder: 'asat',
         imgLength: 6,
+        modalDescription: 'Bajo eléctrico para principiantes (pie incluído) Bajo eléctrico para principiantes (pie incluído) Bajo eléctrico para principiantes (pie incluído) Bajo eléctrico para principiantes (pie incluído) Bajo eléctrico para principiantes (pie incluído)'
     },
     {
         name: "Bajo eléctrico",

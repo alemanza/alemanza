@@ -103,27 +103,93 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   background-color: #F5F5F5;
   font-family: 'Chivo', sans-serif;
-  padding: 70px 0;
 }
 
 /* line 7, ../scss/_base.scss */
 h1 {
-  text-align: center;
-  font-size: 36px;
-  color: #56606d;
-  font-weight: 700;
+  font-size: 58px;
+  font-weight: bold;
+  color: #222;
 }
 
-/* line 14, ../scss/_base.scss */
+/* line 13, ../scss/_base.scss */
 .wrapper {
   padding: 0 25px;
-  margin: 50px auto;
+  margin: auto;
 }
 
+/* line 20, ../scss/_base.scss */
+header {
+  max-width: 1240px;
+  margin: 60px auto 44px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-content: center;
+}
+/* line 27, ../scss/_base.scss */
+header .title {
+  flex: 1;
+}
+/* line 30, ../scss/_base.scss */
+header h1 {
+  max-width: 500px;
+  padding-right: 20px;
+}
+/* line 34, ../scss/_base.scss */
+header .subtitle {
+  font-size: 20px;
+  color: #444;
+  flex: 1;
+  padding-left: 30px;
+  border-left: solid 1px #CCC;
+  display: flex;
+  align-items: center;
+}
+/* line 43, ../scss/_base.scss */
+header p {
+  max-width: 380px;
+  line-height: 1.2;
+}
+/* line 47, ../scss/_base.scss */
+header i {
+  font-style: italic;
+}
+
+/* line 51, ../scss/_base.scss */
+strong {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 57, ../scss/_base.scss */
+  h1 {
+    font-size: 40px;
+  }
+
+  /* line 60, ../scss/_base.scss */
+  header {
+    margin: 0;
+    padding: 0 20px;
+    display: block;
+    align-content: center;
+  }
+  /* line 65, ../scss/_base.scss */
+  header h1 {
+    padding: 0;
+  }
+  /* line 68, ../scss/_base.scss */
+  header .subtitle {
+    margin: 12px 0 22px;
+    padding: 0;
+    border: none;
+    font-size: 14px;
+  }
+}
 /* line 1, ../scss/_modal.scss */
 .modal-header-mobile {
   display: none;
-  background-color: #F5F5F5;
+  background-color: #FFF;
   padding: 15px 20px;
   position: fixed;
   top: 0;
@@ -164,7 +230,7 @@ h1 {
   max-width: 900px;
   margin: 0px auto;
   padding: 20px;
-  background-color: #F5F5F5;
+  background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all .3s ease;
@@ -176,21 +242,24 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 -20px 20px;
+  padding: 0 20px 18px;
+  border-bottom: solid 1px #CCC;
 }
 
-/* line 52, ../scss/_modal.scss */
+/* line 55, ../scss/_modal.scss */
 .modal-header h3 {
   font-size: 20px;
   margin-top: 0;
   color: #444;
 }
 
-/* line 58, ../scss/_modal.scss */
+/* line 61, ../scss/_modal.scss */
 .modal-item-container {
   width: 100%;
 }
 
-/* line 63, ../scss/_modal.scss */
+/* line 66, ../scss/_modal.scss */
 .modal-close {
   width: 24px;
   height: 24px;
@@ -199,30 +268,29 @@ h1 {
   cursor: pointer;
 }
 
-/* line 71, ../scss/_modal.scss */
+/* line 74, ../scss/_modal.scss */
 .modal-body {
-  margin: 20px 0;
-  justify-content: center;
+  margin: 20px 0 0;
 }
 
-/* line 77, ../scss/_modal.scss */
+/* line 78, ../scss/_modal.scss */
 .modal-item-img {
   width: 100%;
   margin-bottom: 5px;
   border-radius: 5px;
 }
 
-/* line 83, ../scss/_modal.scss */
+/* line 84, ../scss/_modal.scss */
 .modal-enter {
   opacity: 0;
 }
 
-/* line 87, ../scss/_modal.scss */
+/* line 88, ../scss/_modal.scss */
 .modal-leave-active {
   opacity: 0;
 }
 
-/* line 91, ../scss/_modal.scss */
+/* line 92, ../scss/_modal.scss */
 .modal-enter .modal-container,
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
@@ -236,7 +304,7 @@ h1 {
 
 /* line 12, ../scss/_slider.scss */
 .csslider {
-  max-width: 1280px;
+  max-width: 1240px;
   margin: auto;
   position: relative;
   display: flex;
@@ -336,18 +404,18 @@ h1 {
 @media screen and (max-width: 767px) {
   /* line 104, ../scss/_slider.scss */
   body {
-    padding: 64px 0 0;
+    padding: 0;
   }
 
   /* line 107, ../scss/_slider.scss */
   .wrapper {
-    margin: 20px 0;
+    margin: 32px 0 20px;
     padding: 0;
   }
 
   /* line 113, ../scss/_slider.scss */
   .csslider .cssl-card {
-    width: auto;
+    width: 100%;
     margin: 10px 20px;
   }
 
@@ -371,34 +439,42 @@ h1 {
   .modal-header-mobile {
     display: flex;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    height: 64px;
+    margin: 0;
+    padding: 0 20px;
   }
 
-  /* line 133, ../scss/_slider.scss */
+  /* line 137, ../scss/_slider.scss */
   .modal-header-desktop {
     display: none;
   }
 
-  /* line 136, ../scss/_slider.scss */
+  /* line 140, ../scss/_slider.scss */
   .modal-body {
     margin: 0;
   }
 
-  /* line 141, ../scss/_slider.scss */
+  /* line 144, ../scss/_slider.scss */
+  .-modal {
+    padding-top: 64px;
+  }
+  /* line 146, ../scss/_slider.scss */
   .-modal header {
     display: none;
   }
-  /* line 144, ../scss/_slider.scss */
+  /* line 149, ../scss/_slider.scss */
   .-modal .wrapper {
     display: none;
   }
-  /* line 147, ../scss/_slider.scss */
+  /* line 152, ../scss/_slider.scss */
   .-modal .modal-mask {
     display: block;
     position: relative;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 155, ../scss/_slider.scss */
+  /* line 160, ../scss/_slider.scss */
   .modal-header-mobile {
     display: none !important;
   }
