@@ -1,18 +1,18 @@
 var items = [
-    {
-        name: "Escritorio industrial Paltafurn",
-        description: "Escritorio de diseño - Estilo Industrial by Paltafurn",
-        rating: '$ 5.000',
-        folder: 'escritorio',
-        imgLength: 4,
-    },
-    {
-        name: "Black out",
-        description: "Black out 115x200cm (cantidad 2) ",
-        rating: '$ 2.500',
-        folder: 'blackout',
-        imgLength: 1,
-    },    
+    // {
+    //     name: "Escritorio industrial Paltafurn",
+    //     description: "Escritorio de diseño - Estilo Industrial by Paltafurn",
+    //     rating: '$ 5.000',
+    //     folder: 'escritorio',
+    //     imgLength: 4,
+    // },
+    // {
+    //     name: "Black out",
+    //     description: "Black out 115x200cm (cantidad 2) ",
+    //     rating: '$ 2.500',
+    //     folder: 'blackout',
+    //     imgLength: 1,
+    // },    
     // {
     //     name: "Mueble para TV",
     //     description: "Mueble TV de melamina",
@@ -48,13 +48,13 @@ var items = [
         folder: 'lampara2',
         imgLength: 2,
     },
-    {
-        name: "Lámpara estilo industrial",
-        description: "Lámpara colgante estilo industrial",
-        rating: '$ 1.000',
-        folder: 'lampara',
-        imgLength: 2,
-    },
+    // {
+    //     name: "Lámpara estilo industrial",
+    //     description: "Lámpara colgante estilo industrial",
+    //     rating: '$ 1.000',
+    //     folder: 'lampara',
+    //     imgLength: 2,
+    // },
     {
         name: "Samsung S23B350",
         description: "Monitor Led Samsung S23B350 23\"",
@@ -76,13 +76,13 @@ var items = [
         folder: 'parrilla',
         imgLength: 4,
     },
-    {
-        name: "Pava Top House",
-        description: "Pava eléctrica Top House",
-        rating: '$ 900',
-        folder: 'pava',
-        imgLength: 2,
-    },
+    // {
+    //     name: "Pava Top House",
+    //     description: "Pava eléctrica Top House",
+    //     rating: '$ 900',
+    //     folder: 'pava',
+    //     imgLength: 2,
+    // },
 
     {
         name: "G&L Asat Classic Tribute",
@@ -183,13 +183,13 @@ var items = [
         folder: 'tripode',
         imgLength: 5,
     },
-    {
-        name: "ColchoKit",
-        description: "Colchoneta gym azul + 2 mancuernas 1kg + 2 tobilleras 1.5 kg",
-        rating: '$ 500',
-        folder: 'colchokit',
-        imgLength: 3,
-    },    
+    // {
+    //     name: "ColchoKit",
+    //     description: "Colchoneta gym azul + 2 mancuernas 1kg + 2 tobilleras 1.5 kg",
+    //     rating: '$ 500',
+    //     folder: 'colchokit',
+    //     imgLength: 3,
+    // },    
 ]
 
 
