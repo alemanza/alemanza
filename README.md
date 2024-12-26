@@ -1,4 +1,4 @@
-![Me](https://github.com/user-attachments/assets/51e96c32-4e9b-42c1-b9a3-16313a511912)
+![Me](https://github.com/user-attachments/assets/b6b68ee6-fba4-472b-b4cf-afe8358b6a69)
 
 
 ### Hi, I'm Alejandro 👋🏻
